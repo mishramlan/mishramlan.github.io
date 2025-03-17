@@ -1,61 +1,61 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #444;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amlan Mishra | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Amlan Mishra</h1>
+        <p>CAE Data Scientist | Simulation & Machine Learning</p>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Mechanical Engineer with expertise in CAE, Machine Learning, and Simulation. Passionate about AI-powered material development.</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/amlan-mishra-7868a6148/">Profile</a> | GitHub: <a href="https://github.com/mishramlan">@mishramlan</a></p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/mishramlan/Inverse-design-of-Metamaterial-structures">Inverse Design of Metamaterials</a> - Deep learning-based material design.
+                <br>
+                <video width="640" height="360" controls>
+                    <source src="assets/Microstructure_generator.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </li>
+            <li><a href="https://github.com/mishramlan/JEB-structural-simulation">JEB Structural Simulation</a> - Predicting maximum stress in jet engine brackets.</li>
+            <li><a href="https://github.com/mishramlan/Contact_Mechanics_Simulation">Contact Mechanics Simulation</a> - Radial wave roughness impact analysis.</li>
+            <li><a href="https://github.com/mishramlan/Fluid_Mechanics_LBM">Fluid Mechanics LBM</a> - Turbulence behavior simulation.</li>
+        </ul>
+    </section>
+    
+    <section id="experience">
+        <h2>Experience</h2>
+        <p><strong>Research Assistant, LivMATS</strong> - Developed deep generative models for material optimization.</p>
+        <p><strong>Research Assistant, IMTEK</strong> - Numerical simulations in contact mechanics.</p>
+        <p><strong>Industry Experience</strong> - Worked at Berger Paints and ITC India.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: amlan.mishra97@gmail.com</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Amlan Mishra. Hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+    </footer>
+</body>
+</html>
