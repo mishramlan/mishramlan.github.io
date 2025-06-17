@@ -32,6 +32,45 @@
         <h2 class="text-3xl font-semibold text-center">Projects</h2>
         <div class="mt-6 max-w-4xl mx-auto space-y-6">
 
+            <!-- PINN based Dynamic Analysis & Fatigue Life Prediction of Ti-6Al-4V -->
+            <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                <h3 class="text-blue-400 text-xl font-semibold">
+                PINN based Dynamic Analysis & Fatigue Life Prediction of Ti-6Al-4V
+                </h3>
+                <p class="mt-2 text-gray-300">
+                    This project implements a Physics-Informed Neural Network (PINN) in PyTorch to:
+                  </p>
+                  <ul class="list-disc list-inside text-gray-400 mt-2">
+                    <li>Generate synthetic Ramberg–Osgood stress–strain data for Ti-6Al-4V</li>
+                    <li>Train a PINN that blends mean-square data loss with a physics loss enforcing ε = σ/E + (σ/K′)¹/ⁿ′</li>
+                    <li>Monitor convergence via total, data, and physics losses and gradient norms</li>
+                    <li>Test generalisation on new sinusoidal strain histories</li>
+                    <li>Estimate fatigue life with a closed-form Coffin–Manson–Basquin model</li>
+                  </ul>
+            
+                <img src="assets/training_convergence.png"
+                    alt="Training convergence of losses"
+                    class="mt-4 w-full rounded-lg">
+                <p class="text-center text-gray-400 mt-2">
+                Semi-log plot showing how total, data, and physics losses decrease over 3000 epochs.
+                </p>
+            
+                <img src="assets/generalisation.png"
+                    alt="Generalisation to new strain history"
+                    class="mt-4 w-full rounded-lg">
+                <p class="text-center text-gray-400 mt-2">
+                True vs. PINN-predicted stress under a new sinusoidal strain history.
+                </p>
+            
+                <img src="assets/fatigue_curve.png"
+                    alt="Ti-6Al-4V fatigue life Coffin–Manson–Basquin curve"
+                    class="mt-4 w-full rounded-lg">
+                <p class="text-center text-gray-400 mt-2">
+                Log-log Coffin–Manson–Basquin curve for strain amplitude vs. reversals to failure, with cross-over ε* marked.
+                </p>
+            </div>
+  
+
             <!-- Explicit Dynamic Simulation Project -->
             <div class="bg-gray-700 p-6 rounded-lg shadow-md">
                 <a href="https://github.com/mishramlan/ExplicitDynamicsSimulation" class="text-blue-400 text-xl font-semibold">Explicit Dynamic Finite-Element Simulation</a>
